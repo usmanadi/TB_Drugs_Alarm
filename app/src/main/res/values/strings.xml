@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Alarm Obat TBC</string>
+    <string name="alarm_on_toast">alarm terpasang</string>
+    <string name="alarm_off_toast">alarm mati</string>
+    <string name="notification_title">Stand Up Alert</string>
+    <string name="notification_text">You should stand up and walk around now!</string>
+    <string name="notification_title_lanjutan">Belum Ada Judul</string>
+    <string name="notification_text_lanjutan">Isi Plaur</string>
+</resources>

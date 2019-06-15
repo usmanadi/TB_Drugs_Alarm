@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Buat Alarm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/judulBb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berat Badan(kg) : "
+        android:layout_below="@id/judul"
+        android:layout_margin="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+    <EditText
+        android:id="@+id/beratBadan"
+        android:layout_below="@id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/judulBb"/>
+    <TextView
+        android:id="@+id/judulDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Mulai : "
+        android:layout_marginLeft="8dp"
+        android:layout_below="@+id/judulBb"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/judulDate"
+        android:layout_below="@+id/beratBadan"
+        android:text="pilih"/>
+    <TextView
+        android:id="@+id/alarmDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_below="@+id/judulBb"
+        android:layout_toRightOf="@+id/btnDate"/>
+    <!--<TextView-->
+        <!--android:id="@+id/hari"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hari ke : "-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_below="@+id/judulDate"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Headline"-->
+        <!--android:visibility="invisible"/>-->
+    <TextView
+        android:id="@+id/obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obat : "
+        android:layout_margin="8dp"
+        android:layout_below="@+id/judulDate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status : Belum Minum Obat"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@+id/obat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:visibility="invisible"/>
+    <Switch
+        android:id="@+id/swStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/obat"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/status"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/setAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="set alarm"/>
+    <Button
+        android:id="@+id/stopAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="stop alarm"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_above="@+id/alarmToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Stand Up Alarm"
+        android:layout_margin="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:visibility="invisible"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmToggle"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
